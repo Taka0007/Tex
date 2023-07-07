@@ -1,0 +1,70 @@
+\RequirePackage{plautopatch}
+\RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass[platex,dvipdfmx]{jlreq}			% for platex
+% \documentclass[uplatex,dvipdfmx]{jlreq}		% for uplatex
+\usepackage{graphicx}
+\usepackage{bxtexlogo}
+\usepackage{amsthm}
+\usepackage{mdframed}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{lightgray}{gray}{0.9}
+
+% カラースキームの設定
+\definecolor{codegray}{gray}{0.95}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{lightgray}{gray}{0.9}
+
+% listingsパッケージのオプション設定
+\lstset{
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize\ttfamily,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+% amsthmパッケージとmdframedパッケージの読み込み
+\usepackage{amsthm}
+\usepackage{mdframed}
+
+% 定理環境の定義
+\mdtheorem[%
+  linecolor=black,
+  linewidth=1.5pt,
+  frametitlerule=true,
+  frametitlebackgroundcolor=lightgray,
+  innertopmargin=\topskip,
+  frametitlebackgroundcolor=lightgray
+]{framedtheorem}{定理}
+
+
+\begin{document}
+
+
+\begin{framedtheorem}
+これは定理の内容です。
+\end{framedtheorem}
+
+
+
+
+
+
+
+
+\end{document}
